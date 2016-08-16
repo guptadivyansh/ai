@@ -233,7 +233,7 @@ stats_file = open("stats.txt", "w")
 stats_file.write("algo h_function average_time minimum_expanded maximum_expanded average_expanded stdev_expanded\n")
 stats_file.close()
 for algo in [a_star, ida_star]:
-	for h_func in [h_c, h_b, h_c]:
+	for h_func in [h_c, h_b, h_a]:
 		print("Running " + algo.__name__ + " with heuristic " + h_func.__name__)
 		expanded_counts = []
 		sol_lens = []
